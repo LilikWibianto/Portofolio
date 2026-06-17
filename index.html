@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Lilik Wibianto</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#44ACFF',
+            primaryDark: '#e73370',
+            secondary: '#64748b',
+            dark: '#021A54'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+
+.nav-link{
+  padding:10px 20px;
+  border-radius:9999px;
+  font-weight:500;
+  color:#334155;
+  transition:all .3s ease;
+}
+
+.nav-link:hover{
+  color:white;
+  transform:translateY(-2px);
+}
+
+.nav-link.active{
+  color:white;
+}
+
+.nav-link.active[data-nav="home"]{
+  background:#3b82f6;
+  box-shadow:0 8px 25px rgba(59,130,246,.35);
+}
+
+.nav-link.active[data-nav="about"]{
+  background:#06b6d4;
+  box-shadow:0 8px 25px rgba(6,182,212,.35);
+}
+
+.nav-link.active[data-nav="blog"]{
+  background:#8b5cf6;
+  box-shadow:0 8px 25px rgba(139,92,246,.35);
+}
+
+.nav-link.active[data-nav="portofolio"]{
+  background:#a855f7;
+  box-shadow:0 8px 25px rgba(168,85,247,.35);
+}
+
+.nav-link.active[data-nav="pendidikan"]{
+  background:#ec4899;
+  box-shadow:0 8px 25px rgba(236,72,153,.35);
+}
+
+.nav-link.active[data-nav="pengalaman"]{
+  background:#f43f5e;
+  box-shadow:0 8px 25px rgba(244,63,94,.35);
+}
+
+</style>
+
+</head>
+
+<body class="bg-white text-dark flex flex-col min-h-screen">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200 shadow-sm">
+
+  <div class="container mx-auto px-6">
+
+    <div class="h-20 flex justify-between items-center">
+
+      <!-- LOGO -->
+      <div>
+
+        <a href="#home"
+           class="text-2xl font-extrabold text-primary">
+
+          Lilik Wibianto
+
+        </a>
+
+      </div>
+
+      <!-- MENU DESKTOP -->
+      <nav class="hidden md:flex items-center gap-2">
+
+  <a href="#home" class="nav-link" data-nav="home">
+    Beranda
+  </a>
+
+  <a href="#about" class="nav-link" data-nav="about">
+    Tentang
+  </a>
+
+  <a href="#blog" class="nav-link" data-nav="blog">
+    Keahlian
+  </a>
+
+  <a href="#portofolio" class="nav-link" data-nav="portofolio">
+    Portofolio
+  </a>
+
+  <a href="#pendidikan" class="nav-link" data-nav="pendidikan">
+    Pendidikan
+  </a>
+
+  <a href="#pengalaman" class="nav-link" data-nav="pengalaman">
+    Pengalaman
+  </a>
+
+</nav>
+
+      <!-- RIGHT -->
+      <div class="hidden lg:flex items-center gap-4">
+
+        <a href="#contact"
+           class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-full hover:scale-105 transition shadow-lg">
+
+          Hubungi Saya
+
+        </a>
+
+      </div>
+
+      <!-- MOBILE -->
+      <button
+        onclick="document.getElementById('menu').classList.toggle('hidden')"
+        class="lg:hidden text-3xl text-primary">
+
+        ☰
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="menu"
+       class="hidden lg:hidden bg-white border-t border-slate-200">
+
+    <a href="#home" class="block px-6 py-4 hover:bg-slate-50">
+      Beranda
+    </a>
+
+    <a href="#about" class="block px-6 py-4 hover:bg-slate-50">
+      Tentang
+    </a>
+
+    <a href="#blog" class="block px-6 py-4 hover:bg-slate-50">
+      Keahlian
+    </a>
+
+    <a href="#portofolio" class="block px-6 py-4 hover:bg-slate-50">
+      Portofolio
+    </a>
+
+    <a href="#pendidikan" class="block px-6 py-4 hover:bg-slate-50">
+      Pendidikan
+    </a>
+
+    <a href="#pengalaman" class="block px-6 py-4 hover:bg-slate-50">
+      Pengalaman
+    </a>
+
+    <a href="#contact"
+       class="block px-6 py-4 text-center bg-primary text-white">
+      Hubungi Saya
+    </a>
+
+  </div>
+
+</header>
+
+<main class="flex-1">
+
+<!-- HERO -->
+<section id="home" class="pt-32 relative">
+
+  <!-- ABSTRACT BACKGROUND -->
+  <div class="absolute -top-20 -left-20 w-[400px] h-[400px] bg-gradient-to-r from-blue-400 to-cyan-300 rounded-full blur-3xl opacity-20"></div>
+
+  <div class="absolute top-20 right-0 w-[350px] h-[350px] bg-gradient-to-r from-pink-400 to-purple-500 rounded-full blur-3xl opacity-20"></div>
+
+  <div class="absolute bottom-0 left-1/2 w-[300px] h-[300px] bg-gradient-to-r from-violet-500 to-indigo-500 rounded-full blur-3xl opacity-15"></div>
+
+  <!-- CONTENT -->
+  <div class="container mx-auto px-6 lg:px-16 relative z-10">
+
+  <div class="flex flex-col-reverse lg:flex-row items-center justify-center gap-10">
+
+    <!-- TEXT -->
+    <div class="w-full lg:w-1/2 text-center lg:text-left">
+
+      <h1 class="text-primary font-semibold text-lg">
+        Halo, Saya
+      </h1>
+
+      <h2 class="text-dark text-4xl lg:text-6xl font-bold mt-2">
+        Lilik Wibianto
+      </h2>
+
+      <h3 class="text-xl text-slate-600 mt-4">
+        Computer Engineering
+      </h3>
+
+      <div class="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start">
+
+        <span class="px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium">
+          Graphic Designer
+        </span>
+
+        <span class="px-4 py-2 rounded-full bg-purple-100 text-purple-700 font-medium">
+          AR Developer
+        </span>
+
+        <span class="px-4 py-2 rounded-full bg-pink-100 text-pink-700 font-medium">
+          Book Layout Designer
+        </span>
+
+      </div>
+
+    </div>
+
+    <!-- IMAGE -->
+<div class="w-full lg:w-1/2 flex justify-center">
+
+  <div class="relative w-[380px] h-[420px]">
+
+    <!-- Glow Background -->
+    <div
+      class="absolute
+             top-1/2 left-1/2
+             -translate-x-1/2 -translate-y-1/2
+             w-[280px] h-[280px]
+             bg-blue-400
+             opacity-20
+             blur-[80px]
+             rounded-full">
+    </div>
+
+    <!-- Shape Utama -->
+    <div
+      class="absolute
+             left-1/2 top-1/2
+             -translate-x-1/2 -translate-y-1/2
+             w-[290px]
+             h-[340px]
+             bg-gradient-to-br
+             from-blue-400
+             via-primary
+             to-blue-600
+             rounded-[55%_45%_60%_40%/45%_60%_40%_55%]
+             shadow-2xl">
+    </div>
+
+    <!-- Ring Dekoratif -->
+    <div
+      class="absolute
+             top-6 right-10
+             w-24 h-24
+             border-[8px]
+             border-blue-300/30
+             rounded-full">
+    </div>
+
+    <div
+      class="absolute
+             bottom-8 left-6
+             w-16 h-16
+             border-[6px]
+             border-primary/30
+             rounded-full">
+    </div>
+
+    <!-- Garis Dekoratif -->
+    <div
+      class="absolute
+             top-24 left-0
+             w-20 h-1
+             bg-gradient-to-r
+             from-primary
+             to-transparent
+             rounded-full opacity-50">
+    </div>
+
+    <div
+      class="absolute
+             bottom-20 right-0
+             w-20 h-1
+             bg-gradient-to-l
+             from-primary
+             to-transparent
+             rounded-full opacity-50">
+    </div>
+
+    <!-- FOTO -->
+    <img
+      src="profil.png"
+      alt="Foto Lilik Wibianto"
+      class="absolute
+             bottom-8
+             left-1/2
+             -translate-x-1/2
+             h-[370px]
+             object-contain
+             drop-shadow-[0_25px_35px_rgba(0,0,0,0.25)]">
+
+  </div>
+
+</div>
+</section>
+
+<!-- PEMBATAS -->
+<div class="h-10 shadow-inner bg-slate-50 mt-10"></div>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 bg-slate-50 relative overflow-hidden">
+
+  <!-- Background Blur -->
+  <div class="absolute top-0 right-0 w-96 h-96 bg-blue-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-pink-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="container mx-auto px-6 lg:px-16 relative z-10">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- KIRI -->
+      <div>
+
+        <h4 class="text-primary font-bold mb-3">
+          Tentang Saya
+        </h4>
+
+        <h2 class="text-4xl font-bold mb-6">
+          Menggabungkan Teknologi dan Kreativitas
+        </h2>
+
+        <p class="text-slate-600 leading-relaxed">
+          Saya merupakan lulusan Teknik Komputer yang memiliki minat dalam
+          pengembangan Augmented Reality dan desain grafis. Berpengalaman
+          dalam pembuatan desain cover buku, layout buku, konten media sosial,
+          serta pengembangan aplikasi AR berbasis Unity.
+        </p>
+
+      </div>
+
+      <!-- KANAN -->
+      <div class="grid grid-cols-2 gap-5">
+
+        <div class="bg-white p-8 rounded-3xl shadow-lg hover:-translate-y-2 hover:shadow-xl transition duration-300 text-center">
+          <h3 class="text-4xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            20+
+          </h3>
+          <p class="text-slate-500 mt-2">
+            Cover Buku
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-lg hover:-translate-y-2 hover:shadow-xl transition duration-300 text-center">
+          <h3 class="text-4xl font-extrabold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+            20+
+          </h3>
+          <p class="text-slate-500 mt-2">
+            Desain Sosmed
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-lg hover:-translate-y-2 hover:shadow-xl transition duration-300 text-center">
+          <h3 class="text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+            2
+          </h3>
+          <p class="text-slate-500 mt-2">
+            Pengalaman Magang
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-lg hover:-translate-y-2 hover:shadow-xl transition duration-300 text-center">
+          <h3 class="text-4xl font-extrabold bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent">
+            3
+          </h3>
+          <p class="text-slate-500 mt-2">
+            Bidang Keahlian
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- KEAHLIAN -->
+<section id="blog" class="py-20 bg-slate-100 relative overflow-hidden">
+
+  <!-- Background Blur -->
+  <div class="absolute top-0 right-0 w-96 h-96 bg-blue-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-pink-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+
+    <div class="text-center mb-14">
+      <h4 class="text-primary font-semibold">
+        Keahlian
+      </h4>
+
+      <h2 class="text-4xl font-bold mt-2">
+        Tools & Skills
+      </h2>
+
+      <p class="text-slate-500 mt-3 max-w-xl mx-auto">
+        Beberapa tools dan teknologi yang saya gunakan dalam
+        pengembangan aplikasi serta desain grafis.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- AR -->
+      <div class="bg-white p-8 rounded-3xl shadow-lg hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+        <div class="text-5xl mb-5">
+          🚀
+        </div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Augmented Reality
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-medium">
+            Unity
+          </span>
+
+          <span class="px-4 py-2 bg-cyan-100 text-cyan-700 rounded-full font-medium">
+            Visual Studio Code
+          </span>
+
+          <span class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full font-medium">
+            Vuforia
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- DESIGN -->
+      <div class="bg-white p-8 rounded-3xl shadow-lg hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+        <div class="text-5xl mb-5">
+          🎨
+        </div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Graphic Design
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full font-medium">
+            Canva
+          </span>
+
+          <span class="px-4 py-2 bg-pink-100 text-pink-700 rounded-full font-medium">
+            Affinity
+          </span>
+
+          <span class="px-4 py-2 bg-red-100 text-red-700 rounded-full font-medium">
+            CorelDraw
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!-- PORTFOLIO -->
+
+  <section id="portofolio" class="py-20 relative overflow-hidden">
+
+  <!-- Background Effect -->
+
+  <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-400 rounded-full blur-[180px] opacity-10"></div>
+
+  <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-pink-400 rounded-full blur-[180px] opacity-10"></div>
+
+  <div class="container mx-auto px-4 relative z-10">
+
+  
+<!-- Heading -->
+<div class="text-center mb-14">
+
+  <h4 class="text-primary font-semibold">
+    Portofolio
+  </h4>
+
+  <h2 class="text-4xl font-bold mt-2">
+    Featured Projects
+  </h2>
+
+  <p class="text-slate-500 mt-4 max-w-2xl mx-auto">
+    Beberapa project yang telah saya kerjakan dalam bidang
+    Augmented Reality, Game Development, dan Graphic Design.
+  </p>
+
+</div>
+
+<!-- Grid -->
+<div class="grid md:grid-cols-3 gap-8">
+
+  <!-- AR Tata Surya -->
+  <div class="bg-white/70 backdrop-blur-xl border border-white rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:shadow-2xl transition duration-500 group">
+
+    <div class="text-5xl mb-5">🪐</div>
+
+    <span class="px-3 py-1 text-xs font-semibold bg-blue-100 text-blue-700 rounded-full">
+      AR Project
+    </span>
+
+    <h3 class="text-2xl font-bold mt-5">
+      Aplikasi AR Tata Surya
+    </h3>
+
+    <p class="text-slate-500 mt-3">
+      Aplikasi edukasi tata surya berbasis Augmented Reality.
+    </p>
+
+    <button onclick="location.href='project/project1.html'"
+      class="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition duration-300">
+      Lihat Detail
+    </button>
+
+  </div>
+
+  <!-- Game -->
+  <div class="bg-white/70 backdrop-blur-xl border border-white rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:shadow-2xl transition duration-500 group">
+
+    <div class="text-5xl mb-5">🎮</div>
+
+    <span class="px-3 py-1 text-xs font-semibold bg-purple-100 text-purple-700 rounded-full">
+      Game Development
+    </span>
+
+    <h3 class="text-2xl font-bold mt-5">
+      Game Wizard 2D
+    </h3>
+
+    <p class="text-slate-500 mt-3">
+      Endless runner dengan sistem obstacle dan scoring.
+    </p>
+
+    <button onclick="location.href='project/project2.html'"
+      class="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition duration-300">
+      Lihat Detail
+    </button>
+
+  </div>
+
+  <!-- Mini Zoo -->
+  <div class="bg-white/70 backdrop-blur-xl border border-white rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:shadow-2xl transition duration-500 group">
+
+    <div class="text-5xl mb-5">🦁</div>
+
+    <span class="px-3 py-1 text-xs font-semibold bg-cyan-100 text-cyan-700 rounded-full">
+      AR Education
+    </span>
+
+    <h3 class="text-2xl font-bold mt-5">
+      AR Mini Zoo
+    </h3>
+
+    <p class="text-slate-500 mt-3">
+      Media edukasi hewan berbasis Augmented Reality.
+    </p>
+
+    <button onclick="location.href='project/project3.html'"
+      class="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition duration-300">
+      Lihat Detail
+    </button>
+
+  </div>
+
+  <!-- Jersey -->
+  <div class="bg-white/70 backdrop-blur-xl border border-white rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:shadow-2xl transition duration-500 group">
+
+    <div class="text-5xl mb-5">👕</div>
+
+    <span class="px-3 py-1 text-xs font-semibold bg-pink-100 text-pink-700 rounded-full">
+      Graphic Design
+    </span>
+
+    <h3 class="text-2xl font-bold mt-5">
+      T-Shirt CHONG FC
+    </h3>
+
+    <p class="text-slate-500 mt-3">
+      Desain jersey futsal untuk kebutuhan tim olahraga.
+    </p>
+
+    <button onclick="location.href='project/project4.html'"
+      class="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition duration-300">
+      Lihat Detail
+    </button>
+
+  </div>
+
+  <!-- Sosmed -->
+  <div class="bg-white/70 backdrop-blur-xl border border-white rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:shadow-2xl transition duration-500 group">
+
+    <div class="text-5xl mb-5">🎨</div>
+
+    <span class="px-3 py-1 text-xs font-semibold bg-orange-100 text-orange-700 rounded-full">
+      Social Media
+    </span>
+
+    <h3 class="text-2xl font-bold mt-5">
+      Desain Sosial Media
+    </h3>
+
+    <p class="text-slate-500 mt-3">
+      Desain Feed Instagram dan konten promosi digital.
+    </p>
+
+    <button onclick="location.href='project/project5.html'"
+      class="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition duration-300">
+      Lihat Detail
+    </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- PENDIDIKAN -->
+
+<section id="pendidikan" class="py-20 bg-slate-50 relative overflow-hidden">
+
+  <!-- Background Effect -->
+
+<div class="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-400 rounded-full blur-[180px] opacity-10"></div>
+
+<div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-pink-400 rounded-full blur-[180px] opacity-10"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+
+<!-- Heading -->
+<div class="text-center mb-16">
+
+  <h4 class="text-primary font-semibold mb-3">
+    Pendidikan
+  </h4>
+
+  <h2 class="text-4xl font-bold text-slate-800">
+    Riwayat Pendidikan
+  </h2>
+
+  <p class="text-slate-400 mt-3">
+    Perjalanan akademik yang membentuk kemampuan saya
+    di bidang teknologi dan desain.
+  </p>
+
+</div>
+
+<!-- Timeline -->
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+
+  <!-- SMK -->
+  <a href="https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20309530"
+     target="_blank"
+     class="group bg-white rounded-3xl p-8 shadow-lg border border-slate-200 hover:-translate-y-3 hover:shadow-2xl hover:border-primary transition duration-500">
+
+    <div class="flex items-center gap-5">
+
+      <img src="smk.jpg"
+           alt="SMK Muhammadiyah 2 Jatinom"
+           class="h-20 w-20 object-contain rounded-xl bg-white p-2">
+
+      <div>
+
+        <span class="px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full">
+        2018 - 2021
+        </span>
+
+        <h3 class="text-xl font-bold text-slate-800 mt-3">
+        SMK Muhammadiyah 2 Jatinom
+        </h3>
+
+        <p class="text-slate-500 mt-1">
+        Teknik Multimedia
+        </p>
+
+      </div>
+
+    </div>
+
+  </a>
+
+  <!-- UTY -->
+  <a href="https://uty.ac.id/"
+     target="_blank"
+     class="group bg-white rounded-3xl p-8 shadow-lg border border-slate-200 hover:-translate-y-3 hover:shadow-2xl hover:border-primary transition duration-500">
+
+    <div class="flex items-center gap-5">
+
+      <img src="Logo UTY.jpg"
+           alt="Universitas Teknologi Yogyakarta"
+           class="h-20 w-20 object-contain rounded-xl bg-white p-2">
+
+      <div>
+
+        <span class="px-3 py-1 text-xs bg-purple-100 text-purple-700 rounded-full">
+        2021 - 2025
+        </span>
+
+        <h3 class="text-xl font-bold text-slate-800 mt-3">
+          Universitas Teknologi Yogyakarta
+        </h3>
+
+        <p class="text-slate-500 mt-1">
+          Teknik Komputer
+        </p>
+
+      </div>
+
+    </div>
+
+  </a>
+
+</div>
+
+  </div>
+
+</section>
+
+<!-- PENGALAMAN -->
+<section id="pengalaman" class="py-20">
+  <div class="container mx-auto px-4 text-center mb-12">
+    <h4 class="text-primary font-semibold mb-2">Pengalaman</h4>
+    <h2 class="text-3xl font-bold">Pengalaman Kerja Praktik & Magang</h2>
+    <p class="text-secondary mt-2"><p class="text-secondary mt-2">
+  Daftar perusahaan dan instansi tempat saya memperoleh pengalaman profesional selama masa studi dan pengembangan karier.
+</p></p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto justify-center">
+
+  <!-- Jogja Exotarium -->
+  <div class="project-card group text-center max-w-xs mx-auto flex flex-col justify-between">
+
+    <div class="project-img">
+      <img src="exotarium.jpg" alt="Jogja Exotarium">
+    </div>
+
+    <div class="project-content mt-1">
+      <h3 class="project-title">Jogja Exotarium</h3>
+      <p class="project-desc">Pengembangan Aplikasi AR Sebagai Media Edukasi</p>
+
+      <button onclick="location.href='project/project3.html'" 
+              class="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition duration-300">
+        Lihat Detail
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Becreative -->
+  <div class="project-card group text-center max-w-xs mx-auto flex flex-col justify-between">
+
+    <div class="project-img">
+      <img src="Logo Becreative.png" alt="Becreative">
+    </div>
+
+    <div class="project-content mt-1">
+      <h3 class="project-title">Becreative Media Talenta</h3>
+      <p class="project-desc">Graphic Designer Intern</p>
+
+      <button onclick="location.href='becreative.html'" 
+              class="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition duration-300">
+        Lihat Detail
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- PEMBATAS -->
+<div class="h-10 shadow-inner bg-slate-20 mt-16"></div>
+
+
+<!-- CONTACT -->
+<section id="contact" class="py-10 text-center"> 
+  <div class="container mx-auto px-4">
+    
+    <h4 class="text-primary font-semibold mb-2">Kontak</h4>
+    <h2 class="text-3xl font-bold mb-6">Hubungi Saya</h2>
+
+    <div class="flex justify-center items-center gap-4">
+
+      <!-- Telepon -->
+      <a href="tel:+6287733954946"
+         class="w-12 h-12 flex items-center justify-center border border-blue-300 text-blue-600 rounded-full hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white hover:border-transparent hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg">
+        <svg width="20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.01 15.38c-1.23 0-2.45-.19-3.57-.57a1 1 0 00-1.02.24l-2.2 2.2a16 16 0 01-6.59-6.59l2.2-2.2a1 1 0 00.24-1.02 11.36 11.36 0 01-.57-3.57A1 1 0 007.64 2H4.66A1 1 0 003.66 3c0 9.39 7.61 17 17 17a1 1 0 001-1v-2.98a1 1 0 00-1-1z"/>
+        </svg>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:lilikwibianto@gmail.com"
+         class="w-12 h-12 flex items-center justify-center border border-blue-300 text-blue-600 rounded-full hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white hover:border-transparent hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg">
+        <svg width="20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22 6H2v12h20V6zm-2 2l-8 5-8-5"/>
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/lilik-wibianto" target="_blank"
+         class="w-12 h-12 flex items-center justify-center border border-blue-300 text-blue-600 rounded-full hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white hover:border-transparent hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg">
+        <svg width="20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43A2.06 2.06 0 113.28 5.37 2.06 2.06 0 015.34 7.43zM7.12 20.45H3.56V9h3.56z"/>
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/llkwbnt_?igsh=MTZpMzJhdG05c3A0Mw==" target="_blank"
+         class="w-12 h-12 flex items-center justify-center border border-blue-300 text-blue-600 rounded-full hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white hover:border-transparent hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg">
+        <svg width="20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm4.25 5.5A4.5 4.5 0 1016.5 12 4.5 4.5 0 0012 7.5zm0 7.5A3 3 0 1115 12a3 3 0 01-3 3zm5.25-8.88a1.12 1.12 0 11-1.12-1.12 1.12 1.12 0 011.12 1.12z"/>
+        </svg>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="relative overflow-hidden py-6 border-t border-slate-200">
+
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200"></div>
+
+  <div class="absolute -left-20 top-0 w-72 h-72 bg-blue-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="absolute -right-20 bottom-0 w-72 h-72 bg-pink-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="container mx-auto px-6 text-center relative z-10">
+
+    <p class="text-slate-1000 text-sm">
+      © Lilik Wibianto. All Rights Reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+
+  let current = "";
+
+  sections.forEach(section => {
+
+    const sectionTop = section.offsetTop - 150;
+    const sectionHeight = section.offsetHeight;
+
+    if (
+      window.scrollY >= sectionTop &&
+      window.scrollY < sectionTop + sectionHeight
+    ) {
+      current = section.getAttribute("id");
+    }
+
+  });
+
+  navLinks.forEach(link => {
+
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+
+  });
+
+});
+</script>
+
+</body>
+</html>
