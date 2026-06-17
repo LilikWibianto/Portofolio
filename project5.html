@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain sosmed</title>
+</head>
+
+    <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#44ACFF',
+            dark: '#021A54',
+            secondary: '#64748b'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-slate-50 text-dark">
+
+<!-- Background Grid -->
+<div class="fixed inset-0 -z-30 opacity-[0.04]"
+     style="
+      background-image:
+      linear-gradient(to right,#021A54 1px,transparent 1px),
+      linear-gradient(to bottom,#021A54 1px,transparent 1px);
+      background-size:52px 52px;">
+</div>
+
+<!-- Abstract Top Line -->
+<div class="fixed top-0 left-0 w-full -z-20 overflow-hidden pointer-events-none">
+
+  <svg viewBox="0 0 1440 320"
+       class="w-full opacity-70">
+
+    <path
+      fill="none"
+      stroke="#44ACFF"
+      stroke-width="12"
+      opacity="0.5"
+      d="M0,180 C180,80 250,280 450,180
+         C650,80 700,250 900,170
+         C1100,90 1250,220 1440,120" />
+
+    <path
+      fill="none"
+      stroke="#8B5CF6"
+      stroke-width="12"
+      opacity="0.5"
+      d="M0,220 C200,120 320,300 520,220
+         C720,140 850,280 1040,190
+         C1240,100 1320,260 1440,180" />
+
+  </svg>
+
+</div>
+
+<!-- Decorative Shapes -->
+<div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+
+  <div
+    class="absolute -top-24 -left-24
+           w-80 h-80
+           border-[20px]
+           border-primary
+           rounded-full opacity-20">
+  </div>
+
+  <div
+    class="absolute bottom-20 left-10
+           w-52 h-52
+           border-[15px]
+           border-purple-400
+           rounded-full opacity-20">
+  </div>
+
+</div>
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200 shadow-sm">
+
+  <div class="container mx-auto px-6">
+
+    <div class="h-20 flex justify-between items-center">
+
+      <h1 class="text-2xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        Detail Project
+      </h1>
+
+      <a href="../index.html"
+         class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 transition duration-300">
+        ← Kembali
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+  <!-- Content -->
+<section class="container mx-auto px-6 py-32">
+
+  <div class="grid lg:grid-cols-4 gap-16">
+
+    <!-- Judul Kiri -->
+    <div class="lg:col-span-1">
+
+       <!-- Gambar Preview -->
+      <div class="mb-8">
+      <img src="../leo/akun.png"
+         alt="Preview Instagram"
+         class="w-full max-w-xs mx-auto lg:mx-0 drop-shadow-xl hover:scale-105 transition duration-300">
+      </div>
+
+      <h2 class="text-3xl font-bold text-slate-800 mb-5">
+        Desain Feed Instagram
+      </h2>
+
+      <p class="text-slate-600 leading-relaxed text-justify">
+      Kumpulan desain feed Instagram yang saya buat untuk menyampaikan informasi dan materi 
+      edukatif kepada audiens. Desain dirancang dengan memperhatikan aspek visual, keterbacaan, 
+      dan penyajian informasi agar pesan dapat tersampaikan secara jelas, menarik, dan mudah 
+      dipahami.
+      </p>
+    </div>
+
+    <!-- Galeri Kanan -->
+    <div class="lg:col-span-3">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Desain 1 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+          <img src="../leo/leo1.jpg" alt="Desain 1" class="w-full aspect-[4/5] object-cover">
+        </div>
+
+        <!-- Desain 2 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+          <img src="../leo/leo2.jpg" alt="Desain 2" class="w-full aspect-[4/5] object-cover">
+        </div>
+
+        <!-- Desain 3 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+          <img src="../leo/leo3.jpg" alt="Desain 3" class="w-full aspect-[4/5] object-cover">
+        </div>
+
+        <!-- Desain 4 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+          <img src="../leo/leo4.jpg" alt="Desain 4" class="w-full aspect-[4/5] object-cover">
+        </div>
+
+        <!-- Desain 5 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+          <img src="../leo/leo5.jpg" alt="Desain 5" class="w-full aspect-[4/5] object-cover">
+        </div>
+
+        <!-- Desain 6 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+          <img src="../leo/leo6.jpg" alt="Desain 6" class="w-full aspect-[4/5] object-cover">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="relative overflow-hidden py-6 border-t border-slate-200">
+
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100"></div>
+
+  <div class="absolute -left-20 top-0 w-72 h-72 bg-blue-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="absolute -right-20 bottom-0 w-72 h-72 bg-pink-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="container mx-auto px-6 text-center relative z-10">
+
+    <p class="text-slate-600">
+      © Lilik Wibianto. All Rights Reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+</body>
+</html>

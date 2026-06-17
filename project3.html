@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerja Praktik</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#44ACFF',
+            dark: '#021A54',
+            secondary: '#64748b'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-slate-50 text-dark">
+
+<!-- BACKGROUND PREMIUM -->
+<div class="fixed inset-0 -z-50 overflow-hidden pointer-events-none">
+
+  <!-- Grid -->
+  <div
+    class="absolute inset-0 opacity-[0.025]"
+    style="
+      background-image:
+      linear-gradient(to right,#021A54 1px,transparent 1px),
+      linear-gradient(to bottom,#021A54 1px,transparent 1px);
+      background-size:60px 60px;">
+  </div>
+
+  <!-- Blur 1 -->
+  <div
+    class="absolute -top-32 -left-32
+           w-[600px] h-[600px]
+           bg-blue-300
+           rounded-full
+           blur-[220px]
+           opacity-20">
+  </div>
+
+  <!-- Blur 2 -->
+  <div
+    class="absolute bottom-0 right-0
+           w-[600px] h-[600px]
+           bg-purple-300
+           rounded-full
+           blur-[220px]
+           opacity-15">
+  </div>
+
+</div>
+
+<!-- FLOWING LINES -->
+<div class="fixed inset-0 -z-40 overflow-hidden pointer-events-none">
+
+<svg
+  class="absolute inset-0 w-full h-full"
+  viewBox="0 0 1920 1080"
+  preserveAspectRatio="none">
+
+  <!-- Line 1 -->
+  <path
+    d="
+    M -300 180
+    C 300 -50,
+      600 450,
+      1100 180
+    S 1800 -50,
+      2300 180"
+    fill="none"
+    stroke="#44ACFF"
+    stroke-width="5"
+    opacity="0.25"/>
+
+  <!-- Line 2 -->
+  <path
+    d="
+    M -300 340
+    C 250 120,
+      700 620,
+      1200 340
+    S 1800 120,
+      2300 340"
+    fill="none"
+    stroke="#8B5CF6"
+    stroke-width="4"
+    opacity="0.20"/>
+
+  <!-- Line 3 -->
+  <path
+    d="
+    M -300 550
+    C 350 250,
+      700 850,
+      1200 550
+    S 1800 250,
+      2300 550"
+    fill="none"
+    stroke="#44ACFF"
+    stroke-width="4"
+    opacity="0.15"/>
+
+  <!-- Line 4 -->
+  <path
+    d="
+    M -300 760
+    C 350 500,
+      750 1000,
+      1200 760
+    S 1800 500,
+      2300 760"
+    fill="none"
+    stroke="#8B5CF6"
+    stroke-width="3"
+    opacity="0.15"/>
+
+</svg>
+
+</div>
+
+<!-- ORGANIC VERTICAL LINE -->
+<div class="fixed inset-0 -z-30 overflow-hidden pointer-events-none">
+
+<svg
+  class="absolute right-0 top-0 h-full w-[500px]"
+  viewBox="0 0 500 1200">
+
+  <path
+    d="
+    M 250 -100
+    C 100 200,
+      450 400,
+      250 700
+    S 100 1100,
+      300 1400"
+    fill="none"
+    stroke="#44ACFF"
+    stroke-width="6"
+    opacity="0.15"/>
+
+</svg>
+
+</div>
+
+<div
+class="fixed top-32 right-20
+       -z-20
+       opacity-20">
+
+  <div class="grid grid-cols-8 gap-3">
+
+    <!-- buat 40 titik -->
+    <span class="w-2 h-2 bg-primary rounded-full"></span>
+    <span class="w-2 h-2 bg-primary rounded-full"></span>
+    <span class="w-2 h-2 bg-primary rounded-full"></span>
+    <span class="w-2 h-2 bg-primary rounded-full"></span>
+    <span class="w-2 h-2 bg-primary rounded-full"></span>
+    <span class="w-2 h-2 bg-primary rounded-full"></span>
+    <span class="w-2 h-2 bg-primary rounded-full"></span>
+    <span class="w-2 h-2 bg-primary rounded-full"></span>
+
+  </div>
+
+</div>
+
+<div
+class="fixed
+       -bottom-48
+       -left-48
+       w-[500px]
+       h-[500px]
+       border-[18px]
+       border-primary
+       rounded-full
+       opacity-10
+       -z-20">
+</div>
+
+<div
+class="fixed
+       top-20
+       -right-56
+       w-[600px]
+       h-[600px]
+       border-[18px]
+       border-purple-400
+       rounded-full
+       opacity-10
+       -z-20">
+</div>
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200 shadow-sm">
+
+  <div class="container mx-auto px-6">
+
+    <div class="h-20 flex justify-between items-center">
+
+      <h1 class="text-2xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        Detail Project
+      </h1>
+
+      <a href="../index.html"
+         class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 transition duration-300">
+        ← Kembali
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- CONTENT -->
+<section class="pt-32 pb-20 relative overflow-hidden">
+
+  <div class="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-pink-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="container mx-auto px-6 lg:px-16">
+
+    <!-- JUDUL -->
+    <div class="text-center mb-12">
+
+  <span class="px-4 py-2 bg-cyan-100 text-cyan-700 rounded-full font-medium">
+    AR Education
+  </span>
+
+  <h1 class="text-3xl font-bold mt-6">
+    Aplikasi Augmented Reality Sebagai Media Pengenalan Hewan di Mini Zoo Jogja Exotarium
+  </h1>
+
+  <p class="text-slate-500 max-w-3xl mx-auto mt-5">
+    Media edukasi berbasis Android yang membantu pengunjung mengenal berbagai satwa melalui teknologi Augmented Reality.
+  </p>
+
+  <p class=" mt-3 font-bold">
+    Kerja Praktik
+  </p>
+
+  <p class="text-slate-500 mt-1">
+    Oktober 2024 - Januari 2025
+  </p>
+
+</div>
+
+    <!-- DESKRIPSI -->
+    <div class="max-w-4xl mx-auto bg-white/70 backdrop-blur-xl border border-white rounded-3xl shadow-xl p-8 mb-12">
+      <h3 class="font-semibold text-lg mb-4 text-primary">
+        Deskripsi Proyek
+      </h3>
+      <p class="text-secondary leading-relaxed text-justify">
+        Proyek ini merancang dan membangun aplikasi Augmented Reality (AR) berbasis Android sebagai media edukasi
+        pengenalan hewan, dimulai dari tahap perencanaan, pembuatan desain antarmuka, hingga implementasi
+        dan pengujian. Proyek ini menggunakan Unity dan Vuforia SDK untuk menampilkan objek 3D beserta
+        deskripsinya, dengan pengkodean dilakukan melalui Visual Studio Code. Selain itu, dilakukan integrasi
+        marker serta pengujian lintas perangkat Android.
+      </p>
+    </div>
+
+      <div class="text-center mb-12">
+
+  <h3 class="text-2xl font-bold mb-6">
+    Teknologi yang Digunakan
+  </h3>
+
+  <div class="flex flex-wrap justify-center gap-3">
+
+    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-medium">
+      Unity
+    </span>
+
+    <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full font-medium">
+      Vuforia
+    </span>
+
+    <span class="px-4 py-2 bg-cyan-100 text-cyan-700 rounded-full font-medium">
+      Visual Studio Code
+    </span>
+
+    <span class="px-4 py-2 bg-pink-100 text-pink-700 rounded-full font-medium">
+      Blender
+    </span>
+
+    <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full font-medium">
+      Canva
+    </span>
+
+    <span class="px-4 py-2 bg-orange-100 text-orange-700 rounded-full font-medium">
+      Android
+    </span>
+
+  </div>
+
+</div>
+
+    <!-- DOKUMENTASI -->
+  <div class="max-w-3xl mx-auto bg-white p-6 rounded-xl shadow mb-12 text-center">
+  <h3 class="font-semibold text-lg mb-6 text-primary">
+    Dokumentasi Kegiatan
+  </h3>
+
+  <div class="flex flex-wrap justify-center gap-6">
+    
+    <img src="../kerja praktik/zoo.jpg"
+         class="w-full max-w-xs rounded-xl shadow hover:scale-105 transition duration-300"
+         alt="Dokumentasi">
+
+    <img src="../kerja praktik/presentasi.png"
+         class="w-full max-w-xs rounded-xl shadow hover:scale-105 transition duration-300"
+         alt="Dokumentasi">
+
+  </div>
+</div>
+
+    <!-- GAMBAR -->
+    <div class="text-center">
+      <h3 class="font-semibold text-lg mb-6 text-primary">
+        Tampilan Aplikasi
+      </h3>
+
+        <div class="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto" justify-items-center>
+
+        <img src="../kerja praktik/menu.jpg"
+             class="w-full max-w-xs rounded-xl shadow hover:scale-105 transition duration-300">
+
+        <img src="../kerja praktik/panduan.jpg"
+             class="w-full max-w-xs rounded-xl shadow hover:scale-105 transition duration-300">
+
+        <img src="../kerja praktik/scan.png"
+             class="w-full max-w-xs rounded-xl shadow hover:scale-105 transition duration-300">
+
+      </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-white/70 backdrop-blur-xl border border-white rounded-3xl shadow-xl p-8 mt-12">
+
+  <h3 class="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+    Hasil Pengembangan
+  </h3>
+
+  <p class="text-slate-600 leading-relaxed text-justify">
+    Aplikasi berhasil menampilkan objek hewan berbasis Augmented Reality beserta informasi edukatif yang dapat digunakan oleh pengunjung Mini Zoo Jogja Exotarium. Pengujian menunjukkan aplikasi berjalan dengan baik pada berbagai perangkat Android dan mampu meningkatkan pemahaman pengguna mengenai satwa yang diperkenalkan.
+  </p>
+
+</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="relative overflow-hidden py-6 border-t border-slate-200 mt-6">
+
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100"></div>
+
+  <div class="absolute -left-20 top-0 w-72 h-72 bg-blue-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="absolute -right-20 bottom-0 w-72 h-72 bg-pink-400 rounded-full blur-[150px] opacity-10"></div>
+
+  <div class="container mx-auto px-6 text-center relative z-10">
+
+    <p class="text-slate-600">
+      © Lilik Wibianto. All Rights Reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
